@@ -1,45 +1,59 @@
-# steganography-detection-cnn
-CNN-based detection of hidden data in images (Steganalysis)
 # 🔍 Image Steganography Detection using CNN
 
-## 📌 Overview
-This project focuses on detecting hidden information inside digital images using Convolutional Neural Networks (CNNs). Steganography is often used for covert communication, making its detection important in cybersecurity.
+## 📌 Project Overview
+This project focuses on detecting hidden information inside digital images using Convolutional Neural Networks (CNNs). Steganography is widely used for covert communication, making its detection important in cybersecurity.
 
-## 🚀 What I Did
-- Built a CNN model to classify images as **clean** or **stego**
+## 🚀 Motivation
+With the rise of hidden data transmission techniques, detecting steganography has become a critical problem in digital forensics and cybersecurity. This project explores how deep learning can be used to identify subtle hidden patterns in images.
+
+## 🧠 Approach
 - Generated steganographic images using controlled perturbations
-- Trained and evaluated the model on the CIFAR-10 dataset
+- Built a CNN model to classify:
+  - Clean images (0)
+  - Stego images (1)
+- Trained on CIFAR-10 dataset
 
-## 🧠 Model Architecture
+## 🏗️ Model Architecture
 - Conv2D (32 filters)
 - MaxPooling
 - Conv2D (64 filters)
 - MaxPooling
-- Dense (64 units)
+- Dense Layer (64 units)
 - Dropout (0.5)
-- Output (Sigmoid)
+- Output Layer (Sigmoid)
 
 ## 📊 Results
-- Validation Accuracy: **85.47%**
-- High recall achieved after threshold tuning
-- Trade-off observed between precision and recall
+- ✅ Validation Accuracy: **85.47%**
+- 📉 Observed overfitting after epoch 4
+- 🎯 Threshold tuning improved recall significantly
 
-## 📈 Key Insights
-- CNNs can effectively learn hidden patterns in images
-- Threshold tuning plays a critical role in detection performance
-- False positives increase when sensitivity is maximized
+## 📈 Sample Outputs
+(Add your graphs here later)
+- Training vs Validation Accuracy
+- Confusion Matrix
 
 ## 🛠️ Tech Stack
 - Python
 - TensorFlow / Keras
-- NumPy, Matplotlib
+- NumPy
+- Matplotlib
+
+## ▶️ How to Run
+1. Clone the repository
+2. https://github.com/asaishivanand-design/steganography-detection-cnn.git
+3. Open Jupyter Notebook
 
 ## 📂 Project Structure
 
-## 🔮 Future Work
-- Use real steganography techniques (LSB, DCT)
-- Train on advanced datasets (BOSSBase)
-- Improve model with deeper architectures
+notebooks/ → Model training
+results/ → Graphs
+paper/ → Research paper
 
-## 🙌 Author
-**Appalla Sai Shivanand**
+
+## 🔮 Future Improvements
+- Implement real steganography (LSB, DCT)
+- Use advanced datasets (BOSSBase)
+- Improve CNN architecture
+
+## 👨‍💻 Author
+Appalla Sai Shivanand
