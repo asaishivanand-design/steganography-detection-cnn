@@ -55,5 +55,10 @@ paper/ → Research paper
 - Use advanced datasets (BOSSBase)
 - Improve CNN architecture
 
+## 📈 Results
+
+![Accuracy](results/accuracy.png)
+![Confusion Matrix](results/confusion_matrix.png)
+
 ## 👨‍💻 Author
 Appalla Sai Shivanand
