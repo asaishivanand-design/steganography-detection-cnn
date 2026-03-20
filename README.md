@@ -35,3 +35,11 @@ This project focuses on detecting hidden information inside digital images using
 - NumPy, Matplotlib
 
 ## 📂 Project Structure
+
+## 🔮 Future Work
+- Use real steganography techniques (LSB, DCT)
+- Train on advanced datasets (BOSSBase)
+- Improve model with deeper architectures
+
+## 🙌 Author
+**Appalla Sai Shivanand**
